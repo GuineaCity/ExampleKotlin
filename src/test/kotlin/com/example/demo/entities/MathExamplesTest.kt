@@ -49,4 +49,35 @@ class MathExamplesTest {
         val mathExamples = MathExamples()
         assertEquals(mathExamples.factorialStream(5), expectedValue)
     }
+
+    @Test
+    fun ggTFor1And1()
+    {
+        val expectedValue = 1
+        val mathExamples = MathExamples()
+        assertEquals(mathExamples.ggT(1,1), expectedValue)
+    }
+
+    @Test
+    fun kgVFor1And1()
+    {
+        val expectedValue = 1
+        val mathExamples = MathExamples()
+        assertEquals(mathExamples.kgV(1,1), expectedValue)
+    }
+    @Test
+    fun ggTFor6And9()
+    {
+        val expectedValue = 3
+        val mathExamples = MathExamples()
+        assertEquals(mathExamples.ggT(6,9), expectedValue)
+    }
+
+    @Test
+    fun kgVFor6And9()
+    {
+        val expectedValue = 18
+        val mathExamples = MathExamples()
+        assertEquals(mathExamples.kgV(6,9), expectedValue)
+    }
 }

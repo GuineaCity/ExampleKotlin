@@ -15,10 +15,13 @@ class MathExamples()
         return result
     }
 
-    fun factorialRecursive(i: Int): Int {
-        return if (i <= 2) i else i * factorialRecursive(i - 1)
-    }
+    fun factorialRecursive(i: Int): Int =  if (i <= 2) i else i * factorialRecursive(i - 1)
 
-    fun factorialStream(i: Long): Long = LongStream.rangeClosed(1,i).reduce(1){i,j -> i*j}
+    fun factorialStream(i: Long): Long = LongStream.rangeClosed(1,i).reduce(1){a,b -> a*b}
+
+    fun ggT(i1: Int, i2:Int): Int = if(i2 == 0)  i1 else ggT(i2, i1 % i2)
+
+    fun kgV(i1: Int, i2: Int): Int = (i1 * i2) / ggT(i1, i2)
+
 
 }

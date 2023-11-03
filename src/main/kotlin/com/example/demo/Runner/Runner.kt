@@ -2,6 +2,7 @@ package com.example.demo.Runner
 
 import com.example.demo.entities.ExampleClass
 import com.example.demo.entities.SealedInterface
+import com.example.demo.entity.SomeEntity
 import com.fasterxml.jackson.databind.ObjectMapper
 import org.springframework.boot.CommandLineRunner
 import org.springframework.stereotype.Component
@@ -23,5 +24,9 @@ public class Runner : CommandLineRunner{
         println(objectMapper.writeValueAsString(exampleClassNoArgsConstructor))
         println(objectMapper.writeValueAsString(exampleClassAllArgsConstructor))
 
+        val someEntity = SomeEntity(1, "Test");
+        println(someEntity)
+        someEntity.aString = "newString"
+        println(someEntity)
     }
 }

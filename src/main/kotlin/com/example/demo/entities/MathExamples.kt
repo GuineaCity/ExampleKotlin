@@ -4,6 +4,8 @@ import java.util.stream.LongStream
 
 class MathExamples()
 {
+
+    // source: https://www.baeldung.com/java-calculate-factorial
     fun factorialForLoop(i: Int): Int
     {
         var result = 1;

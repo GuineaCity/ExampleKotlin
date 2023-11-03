@@ -25,4 +25,10 @@ class ExampleClass(/*This is the primary constructor without args*/) {
             if (value != "null" || value.isEmpty()) // random if as an example
                 field = value // setting the field aString
         }
+
+    override fun toString(): String {
+        return "ExampleClass(anInt=$anInt, aNullableString=$aNullableString, aString='$aString')"
+    }
+
+
 }

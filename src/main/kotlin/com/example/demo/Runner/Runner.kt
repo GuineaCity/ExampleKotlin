@@ -1,5 +1,7 @@
-package com.example.demo.entities
+package com.example.demo.Runner
 
+import com.example.demo.entities.ExampleClass
+import com.example.demo.entities.SealedInterface
 import com.fasterxml.jackson.databind.ObjectMapper
 import org.springframework.boot.CommandLineRunner
 import org.springframework.stereotype.Component

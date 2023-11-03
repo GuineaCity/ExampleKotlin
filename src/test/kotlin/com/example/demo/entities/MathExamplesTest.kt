@@ -80,4 +80,20 @@ class MathExamplesTest {
         val mathExamples = MathExamples()
         assertEquals(mathExamples.kgV(6,9), expectedValue)
     }
+
+    @Test
+    fun binomialCoefficientFor3And2()
+    {
+        val expectedValue = 3L
+        val mathExamples = MathExamples()
+        assertEquals(mathExamples.binomialCoefficient(3,2), expectedValue)
+    }
+
+    @Test
+    fun binomialCoefficientFor10And5()
+    {
+        val expectedValue = 252L
+        val mathExamples = MathExamples()
+        assertEquals(mathExamples.binomialCoefficient(10,5), expectedValue)
+    }
 }

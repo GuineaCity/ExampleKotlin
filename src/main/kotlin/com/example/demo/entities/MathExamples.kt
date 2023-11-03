@@ -23,5 +23,5 @@ class MathExamples()
 
     fun kgV(i1: Int, i2: Int): Int = (i1 * i2) / ggT(i1, i2)
 
-
+    fun binomialCoefficient(l1: Long, l2: Long) : Long = factorialStream(l1) / (factorialStream (l1-l2)*factorialStream(l2))
 }

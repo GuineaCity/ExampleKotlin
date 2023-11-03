@@ -20,5 +20,6 @@ public class Runner : CommandLineRunner{
         val objectMapper = ObjectMapper();
         println(objectMapper.writeValueAsString(exampleClassNoArgsConstructor))
         println(objectMapper.writeValueAsString(exampleClassAllArgsConstructor))
+
     }
 }

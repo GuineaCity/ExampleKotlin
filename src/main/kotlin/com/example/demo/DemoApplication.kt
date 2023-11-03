@@ -8,9 +8,11 @@ class DemoApplication
 {
 	//https://kotlinlang.org/docs/basic-syntax.html
 
-	fun main(args: Array<String>) {
-		runApplication<DemoApplication>(*args)
-	}
 
+
+}
+
+fun main(args: Array<String>) {
+	runApplication<DemoApplication>(*args)
 }
 
